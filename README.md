@@ -72,13 +72,17 @@ Running the simulation is straightforward:
 
 After running the simulation, the tool produces visualizations to help interpret the outcomes of each scenario. Below we show and explain the key plots generated:
 
- ([image]()) *Simulated portfolio value trajectories over 250 days under the **Optimistic scenario**. In this scenario, the portfolio is assumed to have relatively favorable conditions (e.g. higher average returns and moderate volatility). Each line represents one simulated path of portfolio value evolution starting from an initial value (e.g. \$10,000). We can see a general upward drift in most paths, with the majority of simulations ending above or near the starting value. The spread between the lines is not too wide, indicating less uncertainty compared to the pessimistic case.*
+![Simulated Portfolio (Optimistic)](outputs/plots/simulated_portfolios_optimistic.png)
+In this scenario, the portfolio is assumed to have relatively favorable conditions (e.g. higher average returns and moderate volatility). Each line represents one simulated path of portfolio value evolution starting from an initial value (e.g. \$10,000). We can see a general upward drift in most paths, with the majority of simulations ending above or near the starting value. The spread between the lines is not too wide, indicating less uncertainty compared to the pessimistic case.*
 
- ([image]()) *Distribution of final portfolio values after 250 days for the **Optimistic scenario**. This histogram aggregates the ending portfolio values from all simulations in the optimistic case. The outcomes are clustered tightly around the initial value (with a slight tilt towards gains). In other words, under optimistic assumptions, the portfolio is likely to end up close to or somewhat above its starting value, and there is a low probability of a large loss. The concentration of the distribution indicates higher confidence in the range of possible final values.*
+![Final Value Distribution (Optimistic)](outputs/plots/final_distribution_optimistic.png)
+This histogram aggregates the ending portfolio values from all simulations in the optimistic case. The outcomes are clustered tightly around the initial value (with a slight tilt towards gains). In other words, under optimistic assumptions, the portfolio is likely to end up close to or somewhat above its starting value, and there is a low probability of a large loss. The concentration of the distribution indicates higher confidence in the range of possible final values.*
 
- ([image]()) *Simulated portfolio value trajectories over 250 days under the **Pessimistic scenario**. This scenario assumes more adverse market conditions (e.g. lower or zero growth and higher volatility). The plot shows a much wider range of outcomes for the portfolio value. Some simulation paths experience significant growth spurts or drops along the way. Notably, there are paths that dip well below the initial value (reflecting potential losses in a bear market or high volatility environment), and a few that rise substantially (showing that even in a pessimistic volatility scenario, there is a chance of upside outliers). The overall spread is much larger than in the optimistic scenario, visualizing the greater uncertainty and risk.*
+![Simulated Portfolio (Pessimistic)](outputs/plots/simulated_portfolios_pessimistic.png)
+This scenario assumes more adverse market conditions (e.g. lower or zero growth and higher volatility). The plot shows a much wider range of outcomes for the portfolio value. Some simulation paths experience significant growth spurts or drops along the way. Notably, there are paths that dip well below the initial value (reflecting potential losses in a bear market or high volatility environment), and a few that rise substantially (showing that even in a pessimistic volatility scenario, there is a chance of upside outliers). The overall spread is much larger than in the optimistic scenario, visualizing the greater uncertainty and risk.*
 
- ([image]()) *Distribution of final portfolio values for the **Pessimistic scenario**. This histogram shows the ending values of the portfolio after 250 days under pessimistic assumptions. Compared to the optimistic scenario, the distribution here is broader and shifted slightly to the left (toward lower values). There is a noticeable left tail – a higher frequency of simulations ending with significant losses (well below the initial \$10k). While the center of the distribution is around the initial value (meaning many outcomes hover near break-even), the extended left tail indicates a non-negligible probability of large losses. This underscores the importance of risk management in volatile or low-return conditions.*
+![Final Value Distribution (Pessimistic)](outputs/plots/final_distribution_pessimistic.png)
+This histogram shows the ending values of the portfolio after 250 days under pessimistic assumptions. Compared to the optimistic scenario, the distribution here is broader and shifted slightly to the left (toward lower values). There is a noticeable left tail – a higher frequency of simulations ending with significant losses (well below the initial \$10k). While the center of the distribution is around the initial value (meaning many outcomes hover near break-even), the extended left tail indicates a non-negligible probability of large losses. This underscores the importance of risk management in volatile or low-return conditions.*
 
 ## Risk Metrics
 
@@ -115,9 +119,9 @@ Feel free to modify these parameters in the script. For example, you can increas
 
 ## Author / Contact Info
 
-**Author:** *Your Name* (Creator and Maintainer of this project)  
-**Contact:** You can reach out via email at *your.email@example.com* or through my GitHub profile [yourusername](https://github.com/yourusername) for any questions, suggestions, or collaboration ideas. Feedback and contributions are welcome! 
+**Author:** *Dzmitry (AMN3S1)* (Creator and Maintainer of this project)  
+**Contact:** You can reach out via email at *prishchepapl@gmail.com* or through my GitHub profile [AMN3S1](https://github.com/AMN3S1) for any questions, suggestions, or collaboration ideas. Feedback and contributions are welcome! 
 
 ---
 
-*Thank you for checking out **MonteCarlo_Portfolio_Risk**. We hope this tool serves as a valuable resource for understanding portfolio risk through simulation. If you find this project useful, please consider giving it a star on GitHub!*
+*Thank you for checking out **MonteCarlo_Portfolio_Risk**. I hope this tool serves as a valuable resource for understanding portfolio risk through simulation. If you find this project useful, please consider giving it a star on GitHub!*
